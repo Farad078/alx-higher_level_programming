@@ -1,3 +1,2 @@
 #!/bin/bash
-export PYCODE=1_main.py
-python3 1_main.py
+python3 -c "$PYCODE"
