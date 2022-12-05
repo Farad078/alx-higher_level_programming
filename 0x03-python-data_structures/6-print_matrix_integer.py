@@ -15,4 +15,4 @@ def print_matrix_integer(matrix=[[]]):
             j = 0
             print("\n", end="")
     else:
-        return None
+        print("")
