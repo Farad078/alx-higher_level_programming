@@ -1,0 +1,29 @@
+#3-say_my_name.txt
+==============================
+How to use 3-say_my_name.py
+==============================
+
+This library contains just one function that prints out names,
+the function ``is say_my_name``
+
+
+``say_my_name()`` takes in input first and last name and prints it out.
+
+::
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("chinedu", "okorie")
+    My name is chinedu okorie
+
+::
+    >>> say_my_name("chinedu")
+    My name is chinedu 
+
+::
+    >>> say_my_name(12)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+::
+    >>> say_my_name("chinedu", 12)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string

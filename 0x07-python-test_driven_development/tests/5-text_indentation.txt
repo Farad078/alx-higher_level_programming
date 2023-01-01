@@ -1,0 +1,41 @@
+#5-text_indentation.txt
+=====================================
+How to use 5-text_indentation.py
+=====================================
+
+This library contains just one function - ``text_indentation``
+
+``text_indentation`` prints indented strings of text after ``.:?``
+
+::
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> text = """hello? chinedu."""
+    >>> text_indentation(text)
+    hello?
+    <BLANKLINE>
+    chinedu.
+    <BLANKLINE>
+    <BLANKLINE>
+    <BLANKLINE>
+
+::
+    >>> text_indentation(2)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+::
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+
+::
+    >>> text_indentation("12? 34. 43:")
+    12?
+    <BLANKLINE>
+    34.
+    <BLANKLINE>
+    43:
+    <BLANKLINE>
+    <BLANKLINE>
+    <BLANKLINE>
