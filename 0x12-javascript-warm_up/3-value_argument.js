@@ -1,8 +1,14 @@
 #!/usr/bin/node
 
 /* A script that prints the first argument passed to it */
-if (process.argv.length <= 2) {
+const arg = process.argv;
+let count = 0;
+for (const element of arg) {
+  count += 1;
+}
+
+if (count <= 2) {
   console.log('No argument');
 } else {
-  console.log(process.argv[2]);
+  console.log(arg[2]);
 }
