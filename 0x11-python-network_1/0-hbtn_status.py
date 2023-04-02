@@ -6,5 +6,5 @@ with req.urlopen(url) as resp:
     html = resp.read()
 
 print(f"Body response:")
-print(f" - type: {type(html)}")
-print(f" - utf8 content: {html.decode('utf-8')}")
+print(f"    - type: {type(html)}")
+print(f"    - utf8 content: {html.decode('utf-8')}")
