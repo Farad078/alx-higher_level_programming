@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Fetches https://intranet.hbtn.io/status."""
 import urllib.request as req
 
 url = "https://alx-intranet.hbtn.io/status"
